@@ -48,7 +48,7 @@ async function getWeather() {
     const data = await fetchWeather();
     renderWeather(data);
   } catch (e) {
-    weatherEl.textContent = 'Не вдалося отримати погоду';
+    weatherEl.textContent = 'Cannot fetch weather data.';
     console.error(e);
   }
 }
